@@ -1,0 +1,5 @@
+# Local design-system preview (not part of the shipped site)
+design-system.html
+
+# OS / editor cruft
+.DS_Store
