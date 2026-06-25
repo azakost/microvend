@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Страница не найдена — MicroVend</title>
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#277bc0" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary:#277bc0; --primary-700:#21649c; --accent:#ff9b00; --accent-600:#e07c00;
+      --text:#171717; --muted:#525252; --subtle:#737373; --border:#e5e5e5;
+      --font-display:"Montserrat",system-ui,sans-serif; --font-sans:"Inter",system-ui,sans-serif;
+    }
+    * { box-sizing:border-box; margin:0; }
+    body { font-family:var(--font-sans); color:var(--text); background:#fafafa; min-height:100vh; display:flex; flex-direction:column; -webkit-font-smoothing:antialiased; }
+    a { text-decoration:none; }
+    header { border-bottom:1px solid var(--border); background:#fff; }
+    .bar { max-width:960px; margin:0 auto; padding:16px 24px; display:flex; align-items:center; gap:10px; }
+    .bar img { height:32px; width:auto; }
+    .brand { font-family:var(--font-display); font-weight:800; font-size:20px; letter-spacing:-.01em; }
+    .brand .a { color:var(--subtle); } .brand .b { color:var(--primary); }
+    main { flex:1; display:flex; align-items:center; justify-content:center; padding:48px 24px; text-align:center; }
+    .code { font-family:var(--font-display); font-weight:800; font-size:clamp(5rem,3rem+12vw,10rem); line-height:1; letter-spacing:-.04em;
+      background:linear-gradient(90deg,var(--primary),var(--accent)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    h1 { font-family:var(--font-display); font-weight:700; font-size:clamp(1.5rem,1.2rem+1.4vw,2rem); margin-top:8px; letter-spacing:-.01em; }
+    p { color:var(--muted); margin-top:12px; font-size:17px; max-width:460px; }
+    .btn { display:inline-flex; align-items:center; gap:8px; margin-top:28px; background:var(--accent); color:#fff; font-weight:600;
+      padding:12px 24px; border-radius:.625rem; box-shadow:0 1px 2px rgb(23 23 23/.04),0 4px 16px rgb(23 23 23/.06); transition:.15s; }
+    .btn:hover { background:var(--accent-600); }
+    .wrap { display:flex; flex-direction:column; align-items:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="bar" href="index.html" aria-label="На главную MicroVend">
+      <img src="assets/logo.svg" alt="" />
+      <span class="brand"><span class="a">Micro</span><span class="b">Vend</span></span>
+    </a>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="code">404</div>
+      <h1>Страница не найдена</h1>
+      <p>Похоже, такой страницы нет или она была перемещена. Давайте вернёмся на главную.</p>
+      <a class="btn" href="index.html">На главную</a>
+    </div>
+  </main>
+</body>
+</html>
