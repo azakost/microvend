@@ -177,12 +177,12 @@
     <div class="mx-auto flex h-16 max-w-6xl items-center px-4 sm:px-6 lg:px-8">
       <!-- Brand lockup: logo mark + "MicroVend" wordmark (text, Montserrat) -->
       <a href="#main" class="flex items-center gap-2.5" aria-label="MicroVend — операционная система для вендингов">
-        <img src="assets/logo.svg" alt="" class="h-9 w-auto" />
+        <img src="assets/logo.svg" alt="" class="h-10 w-auto" />
         <span class="flex flex-col leading-none">
-          <span class="font-display text-xl font-extrabold tracking-tight">
+          <span class="font-display text-[1.375rem] font-extrabold tracking-tight">
             <span class="text-neutral-500">Micro</span><span class="text-primary-600">Vend</span>
           </span>
-          <span class="mt-1 text-[11px] font-medium text-text-subtle" data-i18n="brand.tagline">Операционная система для вендингов</span>
+          <span class="mt-[4px] block w-full text-[10.5px] font-semibold uppercase text-text-subtle [text-align:justify] [text-align-last:justify]" data-i18n="brand.tagline">Улучшаем вендинг</span>
         </span>
       </a>
 
@@ -222,7 +222,7 @@
           <!-- CTAs -->
           <div class="mt-8">
             <a href="#device" class="group inline-flex items-center justify-center gap-2 rounded-md bg-accent-500 px-6 py-3 font-semibold text-white shadow-soft transition hover:bg-accent-600 hover:shadow-[var(--shadow-pop)]">
-              <span data-i18n="hero.ctaPrimary">Первый аппарат на базе MicroVend</span>
+              <span data-i18n="hero.ctaPrimary">Первый аппарат на MicroVend OS</span>
               <svg viewBox="0 0 24 24" class="size-5 transition-transform group-hover:translate-x-0.5" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M13.2673 4.20889C12.9674 3.9232 12.4926 3.93475 12.2069 4.23467C11.9212 4.5346 11.9328 5.00933 12.2327 5.29502L18.4841 11.2496H3.75C3.33579 11.2496 3 11.5854 3 11.9996C3 12.4138 3.33579 12.7496 3.75 12.7496H18.4842L12.2327 18.7043C11.9328 18.99 11.9212 19.4648 12.2069 19.7647C12.4926 20.0646 12.9674 20.0762 13.2673 19.7905L20.6862 12.7238C20.8551 12.5629 20.9551 12.3576 20.9861 12.1443C20.9952 12.0975 21 12.0491 21 11.9996C21 11.9501 20.9952 11.9016 20.986 11.8547C20.955 11.6415 20.855 11.4364 20.6862 11.2756L13.2673 4.20889Z" fill="currentColor"/></svg>
             </a>
           </div>
@@ -339,7 +339,7 @@
               <span class="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent-500 font-display text-lg font-bold text-white shadow-soft">1</span>
               <div class="pt-1">
                 <h3 class="text-h4" data-i18n="dev.s1t">Заказываете аппарат самостоятельно</h3>
-                <p class="mt-1 text-small text-text-muted" data-i18n="dev.s1d">Сами аппараты мы не продаём, но нашли надёжного поставщика с доступными ценами.</p>
+                <p class="mt-1 text-small text-text-muted"><span data-i18n="dev.s1d">Сами аппараты мы не продаём, но нашли надёжного поставщика с доступными ценами.</span><a href="#disclaimer" class="ml-0.5 align-super text-base font-bold leading-none text-primary-600 hover:text-primary-700" aria-label="Сноска" data-i18n-aria="dev.s1note_aria">*</a></p>
                 <div class="mt-2 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-small font-semibold text-primary-600">
                   <a href="https://www.alibaba.com/product-detail/Indoor-Use-10-Inch-Screen-36_1601799553443.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-primary-700 hover:underline">
                     <span data-i18n="dev.s1link">Ссылка на аппарат</span>
@@ -378,13 +378,305 @@
             </li>
           </ol>
         </div>
+
+        <!-- Custom Android hardware / compatibility -->
+        <div class="mt-12 rounded-2xl border border-border bg-white/70 p-6 backdrop-blur-sm sm:p-8">
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div class="max-w-2xl">
+              <h3 class="text-h4" data-i18n="dev.ct">Знаете хороший доступный аппарат?</h3>
+              <p class="mt-1 text-small text-text-muted" data-i18n="dev.cd">Мы работаем над тем, чтобы как можно больше хороших аппаратов поддерживали MicroVend OS. По вашим наводкам выходим на производителей и договариваемся о совместимости с нашей системой.</p>
+            </div>
+            <a href="#contact" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-accent-500 px-5 py-3 font-semibold text-white shadow-soft transition hover:bg-accent-600 hover:shadow-[var(--shadow-pop)]" data-i18n="dev.cb">Рассказать об аппарате</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Pricing ===== -->
+    <section id="pricing">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="max-w-2xl">
+          <h2 class="text-h2" data-i18n="price.heading">Цены</h2>
+          <p class="mt-4 text-body-lg text-text-muted" data-i18n="price.lead">Лучшее предложение на рынке.</p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:max-w-4xl">
+          <!-- License (one-time) -->
+          <div class="flex flex-col rounded-2xl border border-border bg-white/80 p-6 shadow-soft backdrop-blur-sm sm:p-8">
+            <span class="text-small font-semibold uppercase tracking-wide text-primary-600" data-i18n="price.l_t">Лицензия</span>
+            <div class="mt-3">
+              <span class="font-display text-[2.5rem] font-extrabold leading-none text-text">20&thinsp;000&nbsp;₸</span>
+            </div>
+            <span class="mt-2 block text-small text-text-muted" data-i18n="price.l_unit">единоразово · за аппарат</span>
+            <ul class="mt-6 space-y-3">
+              <li class="flex gap-2.5 text-small text-text"><svg viewBox="0 0 24 24" class="size-5 shrink-0 text-primary-600" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM15.2197 8.96967L10.75 13.4393L8.78033 11.4697C8.48744 11.1768 8.01256 11.1768 7.71967 11.4697C7.42678 11.7626 7.42678 12.2374 7.71967 12.5303L10.2197 15.0303C10.5126 15.3232 10.9874 15.3232 11.2803 15.0303L16.2803 10.0303C16.5732 9.73744 16.5732 9.26256 16.2803 8.96967C15.9874 8.67678 15.5126 8.67678 15.2197 8.96967Z" fill="currentColor"/></svg><span data-i18n="price.l_1">Установка и активация MicroVend OS</span></li>
+              <li class="flex gap-2.5 text-small text-text"><svg viewBox="0 0 24 24" class="size-5 shrink-0 text-primary-600" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM15.2197 8.96967L10.75 13.4393L8.78033 11.4697C8.48744 11.1768 8.01256 11.1768 7.71967 11.4697C7.42678 11.7626 7.42678 12.2374 7.71967 12.5303L10.2197 15.0303C10.5126 15.3232 10.9874 15.3232 11.2803 15.0303L16.2803 10.0303C16.5732 9.73744 16.5732 9.26256 16.2803 8.96967C15.9874 8.67678 15.5126 8.67678 15.2197 8.96967Z" fill="currentColor"/></svg><span data-i18n="price.l_2">Локализация: русский и казахский</span></li>
+              <li class="flex gap-2.5 text-small text-text"><svg viewBox="0 0 24 24" class="size-5 shrink-0 text-primary-600" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM15.2197 8.96967L10.75 13.4393L8.78033 11.4697C8.48744 11.1768 8.01256 11.1768 7.71967 11.4697C7.42678 11.7626 7.42678 12.2374 7.71967 12.5303L10.2197 15.0303C10.5126 15.3232 10.9874 15.3232 11.2803 15.0303L16.2803 10.0303C16.5732 9.73744 16.5732 9.26256 16.2803 8.96967C15.9874 8.67678 15.5126 8.67678 15.2197 8.96967Z" fill="currentColor"/></svg><span data-i18n="price.l_3">Единый QR — Kaspi и Halyk</span></li>
+            </ul>
+            <a href="#contact" class="mt-5 inline-flex items-center gap-1 text-small font-semibold text-primary-600 hover:text-primary-700 hover:underline" data-i18n="price.dealer">Дилерам — специальные условия</a>
+          </div>
+
+          <!-- Subscription (monthly) -->
+          <div class="flex flex-col rounded-2xl border border-border bg-white/80 p-6 shadow-soft backdrop-blur-sm sm:p-8">
+            <span class="text-small font-semibold uppercase tracking-wide text-accent-600" data-i18n="price.s_t">Подписка</span>
+            <div class="mt-3 flex items-baseline gap-1.5">
+              <span class="font-display text-[2.5rem] font-extrabold leading-none text-text">3&thinsp;500&nbsp;₸</span>
+              <span class="text-body font-medium text-text-muted" data-i18n="price.s_per">/мес</span>
+            </div>
+            <span class="mt-2 block text-small text-text-muted" data-i18n="price.s_unit">за аппарат</span>
+            <ul class="mt-6 space-y-3">
+              <li class="flex gap-2.5 text-small text-text"><svg viewBox="0 0 24 24" class="size-5 shrink-0 text-accent-500" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM15.2197 8.96967L10.75 13.4393L8.78033 11.4697C8.48744 11.1768 8.01256 11.1768 7.71967 11.4697C7.42678 11.7626 7.42678 12.2374 7.71967 12.5303L10.2197 15.0303C10.5126 15.3232 10.9874 15.3232 11.2803 15.0303L16.2803 10.0303C16.5732 9.73744 16.5732 9.26256 16.2803 8.96967C15.9874 8.67678 15.5126 8.67678 15.2197 8.96967Z" fill="currentColor"/></svg><span data-i18n="price.s_1">Техподдержка ОС и платежей</span></li>
+              <li class="flex gap-2.5 text-small text-text"><svg viewBox="0 0 24 24" class="size-5 shrink-0 text-accent-500" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM15.2197 8.96967L10.75 13.4393L8.78033 11.4697C8.48744 11.1768 8.01256 11.1768 7.71967 11.4697C7.42678 11.7626 7.42678 12.2374 7.71967 12.5303L10.2197 15.0303C10.5126 15.3232 10.9874 15.3232 11.2803 15.0303L16.2803 10.0303C16.5732 9.73744 16.5732 9.26256 16.2803 8.96967C15.9874 8.67678 15.5126 8.67678 15.2197 8.96967Z" fill="currentColor"/></svg><span data-i18n="price.s_2">Обновления и новые функции</span></li>
+              <li class="flex gap-2.5 text-small text-text"><svg viewBox="0 0 24 24" class="size-5 shrink-0 text-accent-500" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM15.2197 8.96967L10.75 13.4393L8.78033 11.4697C8.48744 11.1768 8.01256 11.1768 7.71967 11.4697C7.42678 11.7626 7.42678 12.2374 7.71967 12.5303L10.2197 15.0303C10.5126 15.3232 10.9874 15.3232 11.2803 15.0303L16.2803 10.0303C16.5732 9.73744 16.5732 9.26256 16.2803 8.96967C15.9874 8.67678 15.5126 8.67678 15.2197 8.96967Z" fill="currentColor"/></svg><span data-i18n="price.s_3">Удалённый контроль в приложении SmartVend</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mt-6 text-small text-text-subtle" data-i18n="price.note">Лицензия — один раз при подключении аппарата. Подписка — пока аппарат работает.</p>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <h2 class="text-h2" data-i18n="faq.heading">Частые вопросы</h2>
+        <div class="mt-10 grid gap-x-12 border-t border-border lg:grid-cols-2">
+          <div class="divide-y divide-border lg:border-b lg:border-border">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q2">Нужно ли покупать аппарат у SmartVend?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <div class="pb-5 text-body text-text-muted">
+              <p data-i18n-html="faq.a2"><strong class="font-semibold text-text">Нет</strong>. Аппарат вы приобретаете самостоятельно у рекомендованного поставщика. Вот ссылки:</p>
+              <div class="mt-2 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-small font-semibold text-primary-600">
+                <a href="https://www.alibaba.com/product-detail/Indoor-Use-10-Inch-Screen-36_1601799553443.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-primary-700 hover:underline">
+                  <span data-i18n="dev.s1link">Ссылка на аппарат</span>
+                  <svg viewBox="0 0 24 24" class="size-3.5" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M6.24992 4.5C5.28344 4.5 4.49996 5.2835 4.49996 6.25V17.75C4.49996 18.7165 5.28344 19.5 6.24992 19.5H17.7496C18.7161 19.5 19.4996 18.7165 19.4996 17.75V13.75C19.4996 13.3358 19.8354 13 20.2496 13C20.6638 13 20.9995 13.3358 20.9995 13.75V17.75C20.9995 19.5449 19.5445 21 17.7496 21H6.24992C4.45504 21 3 19.5449 3 17.75V6.25C3 4.45507 4.45504 3 6.24992 3H10.2498C10.664 3 10.9998 3.33579 10.9998 3.75C10.9998 4.16421 10.664 4.5 10.2498 4.5H6.24992ZM12.9997 3.75C12.9997 3.33579 13.3355 3 13.7497 3H20.25C20.6642 3 21 3.33579 21 3.75V10.25C21 10.6642 20.6642 11 20.25 11C19.8358 11 19.5 10.6642 19.5 10.25V5.56074L14.28 10.7804C13.9871 11.0732 13.5123 11.0732 13.2194 10.7803C12.9265 10.4874 12.9265 10.0125 13.2194 9.71964L18.4395 4.5H13.7497C13.3355 4.5 12.9997 4.16421 12.9997 3.75Z" fill="currentColor"/></svg>
+                </a>
+                <span class="text-neutral-300" aria-hidden="true">|</span>
+                <a href="https://u.wechat.com/EA7gHlK4TNZEeuV2xJnbSjU" target="_blank" rel="noopener noreferrer" class="hover:text-primary-700 hover:underline">WeChat</a>
+                <span class="text-neutral-300" aria-hidden="true">|</span>
+                <a href="https://wa.me/qr/UTE26KZH25DTL1" target="_blank" rel="noopener noreferrer" class="hover:text-primary-700 hover:underline">WhatsApp</a>
+              </div>
+            </div>
+          </details>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q3">Можно ли установить MicroVend на любой аппарат?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <p class="pb-5 text-body text-text-muted" data-i18n-html="faq.a3"><strong class="font-semibold text-text">Нет</strong>. MicroVend работает только с моделями, для которых проведены работы по совместимости и тестированию. Перед покупкой оборудования уточните совместимость у команды SmartVend.</p>
+          </details>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q4">Нужны ли дополнительные устройства для приёма платежей?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <p class="pb-5 text-body text-text-muted" data-i18n-html="faq.a4"><strong class="font-semibold text-text">Нет</strong>. После установки MicroVend аппарат принимает QR-платежи без дополнительных терминалов или модулей.</p>
+          </details>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q5">Какие способы оплаты поддерживаются?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <p class="pb-5 text-body text-text-muted" data-i18n="faq.a5">Сейчас доступны популярные QR-платежи Казахстана, включая Kaspi QR. Ведётся работа над внедрением Единого QR. Список сервисов будет расширяться.</p>
+          </details>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q6">Сколько стоит лицензия MicroVend?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <p class="pb-5 text-body text-text-muted" data-i18n="faq.a6">Бессрочная лицензия — 20 000 ₸ за один аппарат. Лицензия привязана к конкретному аппарату и не переносится на другое оборудование.</p>
+          </details>
+          </div>
+          <div class="divide-y divide-border border-t border-b border-border lg:border-t-0">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q7">Есть ли ежемесячная абонентская плата?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <p class="pb-5 text-body text-text-muted" data-i18n-html="faq.a7"><strong class="font-semibold text-text">Да</strong>. Действует стандартная абонентская плата SmartVend — сейчас 3 500 ₸ в месяц за один аппарат.</p>
+          </details>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q8">Что входит в абонентскую плату?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <div class="pb-5 text-body text-text-muted" data-i18n-html="faq.a8"><ul class="list-disc space-y-1 pl-5"><li>Доступ к экосистеме SmartVend</li><li>Удалённый мониторинг аппарата</li><li>Обновления программного обеспечения</li><li>Техническая поддержка</li><li>Доступ к новым функциям системы</li></ul></div>
+          </details>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q9">Помогаете ли вы с установкой?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <p class="pb-5 text-body text-text-muted" data-i18n-html="faq.a9"><strong class="font-semibold text-text">Да</strong>. Команда SmartVend помогает с установкой и настройкой MicroVend удалённо — инструкции и полное сопровождение, без выезда.</p>
+          </details>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q10">Я дилер. Есть ли специальные условия?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <p class="pb-5 text-body text-text-muted" data-i18n-html="faq.a10"><strong class="font-semibold text-text">Да</strong>. Для дилеров и компаний, готовых продавать совместимые аппараты с предустановленной MicroVend «под ключ», предусмотрены специальные условия сотрудничества. Чтобы обсудить — свяжитесь с командой SmartVend.</p>
+          </details>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q11">Почему лицензия оплачивается отдельно от абонентской платы?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <p class="pb-5 text-body text-text-muted" data-i18n="faq.a11">Лицензия даёт бессрочное право использования MicroVend на одном аппарате. Абонентская плата покрывает облачную инфраструктуру SmartVend, обновления, мониторинг и техподдержку.</p>
+          </details>
+          </div>
+        </div>
+
+        <p class="mt-8 text-small text-text-muted">
+          <span data-i18n="faq.more_t">Остались вопросы?</span>
+          <a href="#contact" class="font-semibold text-primary-600 hover:text-primary-700 hover:underline" data-i18n="faq.more_l">Свяжитесь с нами</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Team ===== -->
+    <section id="team">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <!-- Photo (right on desktop) -->
+          <div class="order-last">
+            <img src="assets/team.jpg" alt="Команда SmartVend" width="600" height="600" class="w-full rounded-2xl shadow-soft ring-1 ring-border" />
+          </div>
+
+          <!-- Right: story + socials -->
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full bg-primary-50 px-3 py-1.5 text-small font-semibold text-primary-700" data-i18n="team.badge">5 лет на рынке</span>
+            <h2 class="mt-4 text-h2" data-i18n="team.heading">Команда</h2>
+            <p class="mt-4 text-body-lg text-text-muted" data-i18n-html="team.lead">MicroVend — продукт команды <a href="https://smartvend.kz" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary-600 hover:text-primary-700 hover:underline">SmartVend</a>, которую хорошо знают на вендинговом рынке Казахстана. Мы делаем операционную систему, опираясь на реальный опыт и боли работы с аппаратами.</p>
+
+            <div class="mt-6 flex flex-col gap-3 sm:max-w-md">
+              <a href="https://www.youtube.com/watch?v=lfgZTObb7Ek" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 rounded-xl border border-border bg-white/80 p-4 shadow-soft backdrop-blur-sm transition hover:shadow-[var(--shadow-pop)]">
+                <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#ff0000]/10 text-[#ff0000]">
+                  <svg viewBox="0 0 24 24" class="size-6" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </span>
+                <span class="min-w-0">
+                  <span class="block font-semibold text-text" data-i18n="team.podcast_t">Мы в YouTube</span>
+                  <span class="block text-small text-text-muted" data-i18n="team.podcast_d">Узнайте о нас</span>
+                </span>
+              </a>
+              <a href="https://www.instagram.com/smartvend.kz" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 rounded-xl border border-border bg-white/80 p-4 shadow-soft backdrop-blur-sm transition hover:shadow-[var(--shadow-pop)]">
+                <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#e1306c]/10 text-[#e1306c]">
+                  <svg viewBox="0 0 24 24" class="size-6" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </span>
+                <span class="min-w-0">
+                  <span class="block font-semibold text-text" data-i18n="team.insta_t">Мы в Instagram</span>
+                  <span class="block text-small text-text-muted" data-i18n="team.insta_d">Закулисье и кейсы</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="rounded-2xl border border-border bg-white/70 p-8 shadow-soft backdrop-blur-sm sm:p-12">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-h2" data-i18n="contact.heading">Свяжитесь с нами</h2>
+            <p class="mt-4 text-body-lg text-text-muted" data-i18n="contact.lead">Ответим на вопросы с понедельника по пятницу с 10:00 до 18:00. В остальное время работает ИИ-ассистент.</p>
+          </div>
+
+          <div class="mt-10 grid gap-3 sm:grid-cols-3">
+            <!-- Call -->
+            <a href="tel:+77007122340" class="flex items-center gap-4 rounded-xl border border-border bg-white/80 p-4 shadow-soft transition hover:shadow-[var(--shadow-pop)]">
+              <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary-50 text-primary-600">
+                <svg viewBox="0 0 24 24" class="size-6" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7.05694 2.41844L8.22394 2.06668C9.54645 1.66804 10.9594 2.31227 11.5258 3.5721L12.4275 5.57782C12.9102 6.65165 12.6558 7.91366 11.7948 8.71661L10.3005 10.1101C10.2568 10.1508 10.2291 10.2058 10.2225 10.2652C10.1781 10.6623 10.4474 11.4357 11.0676 12.51C11.5187 13.2913 11.9269 13.8391 12.2744 14.1473C12.5165 14.362 12.6498 14.4084 12.7065 14.3915L14.7169 13.7769C15.8425 13.4328 17.0623 13.8431 17.751 14.7976L19.0317 16.5726C19.8378 17.6898 19.6928 19.2311 18.6926 20.1784L17.8062 21.0178C16.8498 21.9236 15.4882 22.2611 14.2195 21.907C11.4654 21.1383 8.99608 18.8141 6.78421 14.9831C4.56926 11.1467 3.79207 7.84222 4.50852 5.07043C4.83639 3.80195 5.80252 2.79656 7.05694 2.41844ZM7.48984 3.85461C6.73719 4.08148 6.15751 4.68472 5.96079 5.44581C5.35814 7.77732 6.047 10.7062 8.08325 14.2331C10.1168 17.7552 12.3057 19.8155 14.6227 20.4622C15.384 20.6747 16.2009 20.4722 16.7748 19.9287L17.6611 19.0893C18.1158 18.6587 18.1817 17.9581 17.8153 17.4503L16.5346 15.6753C16.2215 15.2415 15.667 15.0549 15.1554 15.2114L13.1401 15.8275C11.9704 16.1762 10.9087 15.2347 9.7686 13.26C9.00029 11.9293 8.6422 10.9006 8.73177 10.0987C8.77817 9.68322 8.97174 9.29812 9.27746 9.01303L10.7718 7.61958C11.1632 7.2546 11.2788 6.68096 11.0594 6.19286L10.1577 4.18714C9.90026 3.61449 9.25798 3.32165 8.65684 3.50285L7.48984 3.85461Z"/></svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block font-semibold text-text">+7 700 712 2340</span>
+                <span class="block text-small text-text-muted" data-i18n="contact.call_d">Позвонить</span>
+              </span>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/77007122340" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 rounded-xl border border-border bg-white/80 p-4 shadow-soft transition hover:shadow-[var(--shadow-pop)]">
+              <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-[#25d366]/10 text-[#25d366]">
+                <svg viewBox="0 0 24 24" class="size-6" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block font-semibold text-text">WhatsApp</span>
+                <span class="block text-small text-text-muted">+7 700 712 2340</span>
+              </span>
+            </a>
+            <!-- Email -->
+            <a href="mailto:info@smartvend.kz" class="flex items-center gap-4 rounded-xl border border-border bg-white/80 p-4 shadow-soft transition hover:shadow-[var(--shadow-pop)]">
+              <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary-50 text-primary-600">
+                <svg viewBox="0 0 24 24" class="size-6" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M5.25 4H18.75C20.483 4 21.8992 5.35645 21.9949 7.06558L22 7.25V16.75C22 18.483 20.6435 19.8992 18.9344 19.9949L18.75 20H5.25C3.51697 20 2.10075 18.6435 2.00514 16.9344L2 16.75V7.25C2 5.51697 3.35645 4.10075 5.06558 4.00514L5.25 4H18.75H5.25ZM20.5 9.373L12.3493 13.6637C12.1619 13.7623 11.9431 13.7764 11.7468 13.706L11.6507 13.6637L3.5 9.374V16.75C3.5 17.6682 4.20711 18.4212 5.10647 18.4942L5.25 18.5H18.75C19.6682 18.5 20.4212 17.7929 20.4942 16.8935L20.5 16.75V9.373ZM18.75 5.5H5.25C4.33183 5.5 3.57881 6.20711 3.5058 7.10647L3.5 7.25V7.679L12 12.1525L20.5 7.678V7.25C20.5 6.33183 19.7929 5.57881 18.8935 5.5058L18.75 5.5Z"/></svg>
+              </span>
+              <span class="min-w-0">
+                <span class="block truncate font-semibold text-text">info@smartvend.kz</span>
+                <span class="block text-small text-text-muted" data-i18n="contact.mail_d">Написать на почту</span>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <!-- TODO: footer -->
+  <footer class="bg-neutral-900 text-neutral-300">
+    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Brand -->
+        <div class="sm:col-span-2">
+          <div class="flex items-center gap-2.5">
+            <img src="assets/logo.svg" alt="" class="h-9 w-auto" />
+            <span class="font-display text-xl font-extrabold tracking-tight"><span class="text-white">Micro</span><span class="text-primary-400">Vend</span></span>
+          </div>
+          <p class="mt-4 max-w-sm text-small text-neutral-400" data-i18n="foot.desc">Операционная система для вендинговых аппаратов. Продукт команды SmartVend.</p>
+          <div class="mt-5 flex gap-3">
+            <a href="https://www.instagram.com/smartvend.kz" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="flex size-9 items-center justify-center rounded-lg bg-white/5 text-neutral-300 transition hover:bg-white/10 hover:text-white">
+              <svg viewBox="0 0 24 24" class="size-5" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/watch?v=lfgZTObb7Ek" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="flex size-9 items-center justify-center rounded-lg bg-white/5 text-neutral-300 transition hover:bg-white/10 hover:text-white">
+              <svg viewBox="0 0 24 24" class="size-5" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nav -->
+        <nav>
+          <h3 class="text-caption font-semibold uppercase tracking-wider text-neutral-500" data-i18n="foot.nav">Разделы</h3>
+          <ul class="mt-4 space-y-2.5 text-small">
+            <li><a href="#features" class="transition hover:text-white" data-i18n="foot.features">Возможности</a></li>
+            <li><a href="#device" class="transition hover:text-white" data-i18n="foot.start">Как начать</a></li>
+            <li><a href="#pricing" class="transition hover:text-white" data-i18n="foot.pricing">Цены</a></li>
+            <li><a href="#faq" class="transition hover:text-white" data-i18n="foot.faq">Частые вопросы</a></li>
+            <li><a href="#team" class="transition hover:text-white" data-i18n="foot.team">Команда</a></li>
+            <li><a href="#contact" class="transition hover:text-white" data-i18n="foot.contact">Связаться</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contacts -->
+        <div>
+          <h3 class="text-caption font-semibold uppercase tracking-wider text-neutral-500" data-i18n="foot.contacts">Контакты</h3>
+          <ul class="mt-4 space-y-2.5 text-small">
+            <li><a href="tel:+77007122340" class="transition hover:text-white">+7 700 712 2340</a></li>
+            <li><a href="https://wa.me/77007122340" target="_blank" rel="noopener noreferrer" class="transition hover:text-white">WhatsApp</a></li>
+            <li><a href="mailto:info@smartvend.kz" class="transition hover:text-white">info@smartvend.kz</a></li>
+            <li><a href="https://smartvend.kz" target="_blank" rel="noopener noreferrer" class="transition hover:text-white">smartvend.kz</a></li>
+            <li><a href="https://www.instagram.com/smartvend.kz" target="_blank" rel="noopener noreferrer" class="transition hover:text-white">@smartvend.kz</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-white/10 pt-6">
+        <p id="disclaimer" class="max-w-3xl scroll-mt-24 text-caption leading-relaxed text-neutral-500"><span class="font-bold text-primary-400">*</span> <span data-i18n-html="foot.disclaimer"><strong class="font-semibold text-neutral-300">Мы не продаём аппараты</strong> и никак не аффилированы с рекомендуемыми на этой странице поставщиками. Ссылки на поставщиков носят рекомендательный характер — ответственность за качество оборудования и иные действия несёт продавец.</span></p>
+        <div class="mt-6 flex flex-col gap-2 text-caption text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 SmartVend · MicroVend</p>
+          <p data-i18n="foot.rights">Все права защищены.</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Language switcher (ru ↔ kk) + content i18n.
@@ -394,12 +686,12 @@
     (function () {
       var I18N = {
         ru: {
-          'brand.tagline': 'Операционная система для вендингов',
+          'brand.tagline': 'Улучшаем вендинг',
           'hero.badge': 'Сделано для Казахстана',
           'hero.title1': 'Вендинг, ',
           'hero.title2': 'каким он должен быть',
           'hero.subtitle': 'Операционная система MicroVend раскрывает потенциал аппаратов, превращая их в эффективную машину заработка: умные продажи и полный удалённый контроль.',
-          'hero.ctaPrimary': 'Первый аппарат на базе MicroVend',
+          'hero.ctaPrimary': 'Первый аппарат на MicroVend OS',
           'hero.point1': 'Простая настройка',
           'hero.point2': 'Без иероглифов',
           'hero.point3': 'Единый QR',
@@ -422,22 +714,86 @@
           'dev.lead': 'Запуск в два шага.',
           'dev.s1t': 'Заказываете аппарат самостоятельно',
           'dev.s1d': 'Сами аппараты мы не продаём, но нашли надёжного поставщика с доступными ценами.',
+          'dev.s1note_aria': 'К сноске',
           'dev.s1link': 'Ссылка на аппарат',
           'dev.s2t': 'Устанавливаете MicroVend OS',
           'dev.s2d': 'Оформляете лицензию MicroVend — активируем и настроим удалённо, без выезда.',
           'dev.s2link': 'Посмотреть цены',
           'dev.s3t': 'Занимаетесь бизнесом',
           'dev.s3d': 'Аппарат зарабатывает — техподдержку операционной системы и платежей наша команда берёт на себя.',
-          'dev.s3link': 'Знакомьтесь с командой'
+          'dev.s3link': 'Знакомьтесь с командой',
+          'dev.ct': 'Знаете хороший доступный аппарат?',
+          'dev.cd': 'Мы работаем над тем, чтобы как можно больше хороших аппаратов поддерживали MicroVend OS. По вашим наводкам выходим на производителей и договариваемся о совместимости с нашей системой.',
+          'dev.cb': 'Рассказать об аппарате',
+          'price.heading': 'Цены',
+          'price.lead': 'Лучшее предложение на рынке.',
+          'price.l_t': 'Лицензия',
+          'price.l_unit': 'единоразово · за аппарат',
+          'price.l_1': 'Установка и активация MicroVend OS',
+          'price.l_2': 'Локализация: русский и казахский',
+          'price.l_3': 'Единый QR — Kaspi и Halyk',
+          'price.dealer': 'Дилерам — специальные условия',
+          'price.s_t': 'Подписка',
+          'price.s_per': '/мес',
+          'price.s_unit': 'за аппарат',
+          'price.s_1': 'Техподдержка ОС и платежей',
+          'price.s_2': 'Обновления и новые функции',
+          'price.s_3': 'Удалённый контроль в приложении SmartVend',
+          'price.note': 'Лицензия — один раз при подключении аппарата. Подписка — пока аппарат работает.',
+          'team.badge': '5 лет на рынке',
+          'team.heading': 'Команда',
+          'team.lead': 'MicroVend — продукт команды <a href="https://smartvend.kz" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary-600 hover:text-primary-700 hover:underline">SmartVend</a>, которую хорошо знают на вендинговом рынке Казахстана. Мы делаем операционную систему, опираясь на реальный опыт и боли работы с аппаратами.',
+          'team.podcast_t': 'Мы в YouTube',
+          'team.podcast_d': 'Узнайте о нас',
+          'team.insta_t': 'Мы в Instagram',
+          'team.insta_d': 'Закулисье и кейсы',
+          'faq.heading': 'Частые вопросы',
+          'faq.q2': 'Нужно ли покупать аппарат у SmartVend?',
+          'faq.a2': '<strong class="font-semibold text-text">Нет</strong>. Аппарат вы приобретаете самостоятельно у рекомендованного поставщика. Вот ссылки:',
+          'faq.q3': 'Можно ли установить MicroVend на любой аппарат?',
+          'faq.a3': '<strong class="font-semibold text-text">Нет</strong>. MicroVend работает только с моделями, для которых проведены работы по совместимости и тестированию. Перед покупкой оборудования уточните совместимость у команды SmartVend.',
+          'faq.q4': 'Нужны ли дополнительные устройства для приёма платежей?',
+          'faq.a4': '<strong class="font-semibold text-text">Нет</strong>. После установки MicroVend аппарат принимает QR-платежи без дополнительных терминалов или модулей.',
+          'faq.q5': 'Какие способы оплаты поддерживаются?',
+          'faq.a5': 'Сейчас доступны популярные QR-платежи Казахстана, включая Kaspi QR. Ведётся работа над внедрением Единого QR. Список сервисов будет расширяться.',
+          'faq.q6': 'Сколько стоит лицензия MicroVend?',
+          'faq.a6': 'Бессрочная лицензия — 20 000 ₸ за один аппарат. Лицензия привязана к конкретному аппарату и не переносится на другое оборудование.',
+          'faq.q7': 'Есть ли ежемесячная абонентская плата?',
+          'faq.a7': '<strong class="font-semibold text-text">Да</strong>. Действует стандартная абонентская плата SmartVend — сейчас 3 500 ₸ в месяц за один аппарат.',
+          'faq.q8': 'Что входит в абонентскую плату?',
+          'faq.a8': '<ul class="list-disc space-y-1 pl-5"><li>Доступ к экосистеме SmartVend</li><li>Удалённый мониторинг аппарата</li><li>Обновления программного обеспечения</li><li>Техническая поддержка</li><li>Доступ к новым функциям системы</li></ul>',
+          'faq.q9': 'Помогаете ли вы с установкой?',
+          'faq.a9': '<strong class="font-semibold text-text">Да</strong>. Команда SmartVend помогает с установкой и настройкой MicroVend удалённо — инструкции и полное сопровождение, без выезда.',
+          'faq.q10': 'Я дилер. Есть ли специальные условия?',
+          'faq.a10': '<strong class="font-semibold text-text">Да</strong>. Для дилеров и компаний, готовых продавать совместимые аппараты с предустановленной MicroVend «под ключ», предусмотрены специальные условия сотрудничества. Чтобы обсудить — свяжитесь с командой SmartVend.',
+          'faq.q11': 'Почему лицензия оплачивается отдельно от абонентской платы?',
+          'faq.a11': 'Лицензия даёт бессрочное право использования MicroVend на одном аппарате. Абонентская плата покрывает облачную инфраструктуру SmartVend, обновления, мониторинг и техподдержку.',
+          'faq.more_t': 'Остались вопросы?',
+          'faq.more_l': 'Свяжитесь с нами',
+          'contact.heading': 'Свяжитесь с нами',
+          'contact.lead': 'Ответим на вопросы с понедельника по пятницу с 10:00 до 18:00. В остальное время работает ИИ-ассистент.',
+          'contact.call_d': 'Позвонить',
+          'contact.mail_d': 'Написать на почту',
+          'foot.desc': 'Операционная система для вендинговых аппаратов. Продукт команды SmartVend.',
+          'foot.nav': 'Разделы',
+          'foot.features': 'Возможности',
+          'foot.start': 'Как начать',
+          'foot.pricing': 'Цены',
+          'foot.team': 'Команда',
+          'foot.faq': 'Частые вопросы',
+          'foot.contact': 'Связаться',
+          'foot.contacts': 'Контакты',
+          'foot.disclaimer': '<strong class="font-semibold text-neutral-300">Мы не продаём аппараты</strong> и никак не аффилированы с рекомендуемыми на этой странице поставщиками. Ссылки на поставщиков носят рекомендательный характер — ответственность за качество оборудования и иные действия несёт продавец.',
+          'foot.rights': 'Все права защищены.'
         },
         // TODO: проверить казахский перевод носителем языка.
         kk: {
-          'brand.tagline': 'Вендингке арналған операциялық жүйе',
+          'brand.tagline': 'Вендингті жақсартамыз',
           'hero.badge': 'Қазақстанға арналған',
           'hero.title1': 'Вендинг — ',
           'hero.title2': 'қандай болуы керек',
           'hero.subtitle': 'MicroVend операциялық жүйесі аппараттардың әлеуетін ашып, оларды тиімді табыс машинасына айналдырады: ақылды сатылым және толық қашықтан бақылау.',
-          'hero.ctaPrimary': 'MicroVend негізіндегі алғашқы аппарат',
+          'hero.ctaPrimary': 'MicroVend OS-тегі алғашқы аппарат',
           'hero.point1': 'Қарапайым баптау',
           'hero.point2': 'Иероглифсіз',
           'hero.point3': 'Бірыңғай QR',
@@ -460,13 +816,77 @@
           'dev.lead': 'Екі қадаммен іске қосу.',
           'dev.s1t': 'Аппаратты өзіңіз тапсырыс бересіз',
           'dev.s1d': 'Аппараттарды біз сатпаймыз, бірақ бағасы қолжетімді сенімді жеткізушіні таптық.',
+          'dev.s1note_aria': 'Сілтемеге',
           'dev.s1link': 'Аппаратқа сілтеме',
           'dev.s2t': 'MicroVend OS орнатасыз',
           'dev.s2d': 'MicroVend лицензиясын ресімдейсіз — қашықтан, барусыз белсендіріп баптаймыз.',
           'dev.s2link': 'Бағаларды көру',
           'dev.s3t': 'Бизнеспен айналысасыз',
           'dev.s3d': 'Аппарат табыс әкеледі — операциялық жүйе мен төлемдердің техникалық қолдауын біздің команда өз мойнына алады.',
-          'dev.s3link': 'Командамен танысыңыз'
+          'dev.s3link': 'Командамен танысыңыз',
+          'dev.ct': 'Жақсы әрі қолжетімді аппаратты білесіз бе?',
+          'dev.cd': 'Мүмкіндігінше көп жақсы аппарат MicroVend OS-ты қолдауы үшін жұмыс істеп жатырмыз. Сіздің кеңестеріңіз бойынша өндірушілермен байланысып, жүйемізбен үйлесімділік туралы келісеміз.',
+          'dev.cb': 'Аппарат туралы айтыңыз',
+          'price.heading': 'Бағалар',
+          'price.lead': 'Нарықтағы ең жақсы ұсыныс.',
+          'price.l_t': 'Лицензия',
+          'price.l_unit': 'біржолғы · аппаратқа',
+          'price.l_1': 'MicroVend OS орнату және белсендіру',
+          'price.l_2': 'Локализация: орыс және қазақ',
+          'price.l_3': 'Бірыңғай QR — Kaspi және Halyk',
+          'price.dealer': 'Дилерлерге — арнайы шарттар',
+          'price.s_t': 'Жазылым',
+          'price.s_per': '/ай',
+          'price.s_unit': 'аппаратқа',
+          'price.s_1': 'ОЖ мен төлемдердің техқолдауы',
+          'price.s_2': 'Жаңартулар мен жаңа функциялар',
+          'price.s_3': 'SmartVend қосымшасында қашықтан бақылау',
+          'price.note': 'Лицензия — аппаратты қосқанда бір рет. Жазылым — аппарат жұмыс істеп тұрғанда.',
+          'team.badge': 'Нарықта 5 жыл',
+          'team.heading': 'Команда',
+          'team.lead': 'MicroVend — Қазақстанның вендинг нарығында жақсы танымал <a href="https://smartvend.kz" target="_blank" rel="noopener noreferrer" class="font-semibold text-primary-600 hover:text-primary-700 hover:underline">SmartVend</a> командасының өнімі. Біз операциялық жүйені аппараттармен жұмыстың нақты тәжірибесі мен қиындықтарына сүйене отырып жасаймыз.',
+          'team.podcast_t': 'Біз YouTube-те',
+          'team.podcast_d': 'Біз туралы біліңіз',
+          'team.insta_t': 'Біз Instagram-да',
+          'team.insta_d': 'Көлеңкедегі жұмыс пен кейстер',
+          'faq.heading': 'Жиі қойылатын сұрақтар',
+          'faq.q2': 'Аппаратты SmartVend-тен сатып алу керек пе?',
+          'faq.a2': '<strong class="font-semibold text-text">Жоқ</strong>. Аппаратты ұсынылған жеткізушіден өзіңіз сатып аласыз. Міне сілтемелер:',
+          'faq.q3': 'MicroVend-ті кез келген аппаратқа орнатуға бола ма?',
+          'faq.a3': '<strong class="font-semibold text-text">Жоқ</strong>. MicroVend тек үйлесімділік пен тестілеу жұмыстары жүргізілген модельдермен жұмыс істейді. Жабдықты сатып алмас бұрын үйлесімділікті SmartVend командасынан нақтылаңыз.',
+          'faq.q4': 'Төлем қабылдау үшін қосымша құрылғылар қажет пе?',
+          'faq.a4': '<strong class="font-semibold text-text">Жоқ</strong>. MicroVend орнатылғаннан кейін аппарат қосымша терминалдарсыз немесе модульдерсіз QR-төлемдерді қабылдайды.',
+          'faq.q5': 'Қандай төлем тәсілдері қолдау табады?',
+          'faq.a5': 'Қазір Қазақстанның танымал QR-төлемдері, оның ішінде Kaspi QR қолжетімді. Бірыңғай QR (Единый QR) енгізу үстінде жұмыс жүргізілуде. Сервистер тізімі кеңейтіле береді.',
+          'faq.q6': 'MicroVend лицензиясы қанша тұрады?',
+          'faq.a6': 'Мерзімсіз лицензия — бір аппаратқа 20 000 ₸. Лицензия нақты аппаратқа байланады және басқа жабдыққа ауыспайды.',
+          'faq.q7': 'Айлық абоненттік төлем бар ма?',
+          'faq.a7': '<strong class="font-semibold text-text">Иә</strong>. SmartVend-тің стандартты абоненттік төлемі қолданылады — қазір бір аппаратқа айына 3 500 ₸.',
+          'faq.q8': 'Абоненттік төлемге не кіреді?',
+          'faq.a8': '<ul class="list-disc space-y-1 pl-5"><li>SmartVend экожүйесіне қолжетімділік</li><li>Аппаратты қашықтан бақылау</li><li>Бағдарламалық жасақтаманы жаңарту</li><li>Техникалық қолдау</li><li>Жүйенің жаңа функцияларына қолжетімділік</li></ul>',
+          'faq.q9': 'Орнатуға көмектесесіздер ме?',
+          'faq.a9': '<strong class="font-semibold text-text">Иә</strong>. SmartVend командасы MicroVend-ті орнату мен баптауға қашықтан көмектеседі — нұсқаулық пен толық сүйемелдеу, барусыз.',
+          'faq.q10': 'Мен дилермін. Арнайы шарттар бар ма?',
+          'faq.a10': '<strong class="font-semibold text-text">Иә</strong>. MicroVend алдын ала орнатылған үйлесімді аппараттарды «кілтке дейін» сатуға дайын дилерлер мен компанияларға арнайы ынтымақтастық шарттары қарастырылған. Талқылау үшін SmartVend командасына хабарласыңыз.',
+          'faq.q11': 'Лицензия неге абоненттік төлемнен бөлек төленеді?',
+          'faq.a11': 'Лицензия MicroVend-ті бір аппаратта мерзімсіз пайдалану құқығын береді. Абоненттік төлем SmartVend бұлттық инфрақұрылымын, жаңартуларды, мониторинг пен техқолдауды қамтиды.',
+          'faq.more_t': 'Сұрақтарыңыз бар ма?',
+          'faq.more_l': 'Бізге хабарласыңыз',
+          'contact.heading': 'Бізге хабарласыңыз',
+          'contact.lead': 'Сұрақтарға дүйсенбіден жұмаға дейін сағат 10:00-ден 18:00-ге дейін жауап береміз. Қалған уақытта ИИ-ассистент жұмыс істейді.',
+          'contact.call_d': 'Қоңырау шалу',
+          'contact.mail_d': 'Поштаға жазу',
+          'foot.desc': 'Вендинг аппараттарына арналған операциялық жүйе. SmartVend командасының өнімі.',
+          'foot.nav': 'Бөлімдер',
+          'foot.features': 'Мүмкіндіктер',
+          'foot.start': 'Қалай бастау',
+          'foot.pricing': 'Бағалар',
+          'foot.team': 'Команда',
+          'foot.faq': 'Жиі қойылатын сұрақтар',
+          'foot.contact': 'Хабарласу',
+          'foot.contacts': 'Байланыс',
+          'foot.disclaimer': 'Біз аппараттарды сатпаймыз және осы беттегі ұсынылатын жеткізушілермен ешқандай байланысымыз жоқ. Жеткізушілерге сілтемелер ұсыныстық сипатта — жабдықтың сапасы мен өзге де әрекеттер үшін сатушы жауапты.',
+          'foot.rights': 'Барлық құқықтар қорғалған.'
         }
       };
 
@@ -476,6 +896,10 @@
         document.querySelectorAll('[data-i18n]').forEach(function (el) {
           var v = tr(el.getAttribute('data-i18n'));
           if (v != null) el.textContent = v;
+        });
+        document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+          var v = tr(el.getAttribute('data-i18n-html'));
+          if (v != null) el.innerHTML = v;
         });
         document.querySelectorAll('[data-i18n-aria]').forEach(function (el) {
           var v = tr(el.getAttribute('data-i18n-aria'));
