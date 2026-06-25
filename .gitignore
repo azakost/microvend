@@ -1,5 +1,5 @@
-# Local design-system preview (not part of the shipped site)
-design-system.html
+# Markdown docs — kept local only, never deployed to the static host
+*.md
 
 # OS / editor cruft
 .DS_Store
