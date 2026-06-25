@@ -4,10 +4,150 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- ===== Primary meta / SEO ===== -->
   <title>MicroVend — операционная система для вендинговых аппаратов</title>
-  <meta name="description" content="MicroVend — операционная система для вендинговых аппаратов." />
+  <meta name="description" content="MicroVend — ОС для вендинговых аппаратов: оплата по QR (Kaspi/Halyk), интерфейс на русском и казахском, удалённый контроль из приложения SmartVend. Сделано для Казахстана." />
+  <meta name="keywords" content="MicroVend, SmartVend, вендинг, вендинговые аппараты, операционная система для вендинга, Kaspi QR, оплата по QR, умный вендинг, вендинг Казахстан" />
+  <meta name="author" content="SmartVend" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://microvend.kz/" />
   <meta name="theme-color" content="#277bc0" />
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/logo.svg" />
+
+  <!-- ===== Open Graph (Telegram / WhatsApp / Facebook / LinkedIn) ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MicroVend" />
+  <meta property="og:title" content="MicroVend — операционная система для вендинговых аппаратов" />
+  <meta property="og:description" content="Оплата по QR (Kaspi/Halyk), интерфейс на русском и казахском, удалённый контроль из приложения SmartVend. Сделано для Казахстана." />
+  <meta property="og:url" content="https://microvend.kz/" />
+  <meta property="og:image" content="https://microvend.kz/assets/hero.png" />
+  <meta property="og:image:alt" content="Вендинговый аппарат на MicroVend OS" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale:alternate" content="kk_KZ" />
+
+  <!-- ===== Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MicroVend — операционная система для вендинговых аппаратов" />
+  <meta name="twitter:description" content="Оплата по QR (Kaspi/Halyk), интерфейс на русском и казахском, удалённый контроль из приложения SmartVend. Сделано для Казахстана." />
+  <meta name="twitter:image" content="https://microvend.kz/assets/hero.png" />
+
+  <!-- ===== Schema.org structured data ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://microvend.kz/#organization",
+        "name": "SmartVend",
+        "url": "https://smartvend.kz",
+        "logo": "https://microvend.kz/assets/logo.svg",
+        "email": "info@smartvend.kz",
+        "telephone": "+77007122340",
+        "sameAs": [
+          "https://www.instagram.com/smartvend.kz",
+          "https://www.youtube.com/watch?v=lfgZTObb7Ek"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+77007122340",
+          "contactType": "sales",
+          "areaServed": "KZ",
+          "availableLanguage": ["ru", "kk"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://microvend.kz/#website",
+        "url": "https://microvend.kz/",
+        "name": "MicroVend",
+        "inLanguage": "ru",
+        "publisher": { "@id": "https://microvend.kz/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "MicroVend",
+        "operatingSystem": "Android",
+        "applicationCategory": "BusinessApplication",
+        "url": "https://microvend.kz/",
+        "description": "Операционная система для вендинговых аппаратов: оплата по QR (Kaspi/Halyk), интерфейс на русском и казахском, удалённый контроль из приложения SmartVend.",
+        "publisher": { "@id": "https://microvend.kz/#organization" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Лицензия MicroVend",
+            "price": "20000",
+            "priceCurrency": "KZT",
+            "description": "Бессрочная лицензия на один аппарат"
+          },
+          {
+            "@type": "Offer",
+            "name": "Подписка SmartVend",
+            "price": "3500",
+            "priceCurrency": "KZT",
+            "description": "Абонентская плата за один аппарат в месяц"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Нужно ли покупать аппарат у SmartVend?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Нет. Аппарат вы приобретаете самостоятельно у рекомендованного поставщика." }
+          },
+          {
+            "@type": "Question",
+            "name": "Можно ли установить MicroVend на любой аппарат?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Нет. MicroVend работает только с моделями, для которых проведены работы по совместимости и тестированию. Перед покупкой оборудования уточните совместимость у команды SmartVend." }
+          },
+          {
+            "@type": "Question",
+            "name": "Нужны ли дополнительные устройства для приёма платежей?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Нет. После установки MicroVend аппарат принимает QR-платежи без дополнительных терминалов или модулей." }
+          },
+          {
+            "@type": "Question",
+            "name": "Какие способы оплаты поддерживаются?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Сейчас доступны популярные QR-платежи Казахстана, включая Kaspi QR. Ведётся работа над внедрением Единого QR. Список сервисов будет расширяться." }
+          },
+          {
+            "@type": "Question",
+            "name": "Сколько стоит лицензия MicroVend?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Бессрочная лицензия — 20 000 ₸ за один аппарат. Лицензия привязана к конкретному аппарату и не переносится на другое оборудование." }
+          },
+          {
+            "@type": "Question",
+            "name": "Есть ли ежемесячная абонентская плата?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Да. Действует стандартная абонентская плата SmartVend — сейчас 3 500 ₸ в месяц за один аппарат." }
+          },
+          {
+            "@type": "Question",
+            "name": "Что входит в абонентскую плату?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Доступ к экосистеме SmartVend, удалённый мониторинг аппарата, обновления программного обеспечения, техническая поддержка и доступ к новым функциям системы." }
+          },
+          {
+            "@type": "Question",
+            "name": "Помогаете ли вы с установкой?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Да. Команда SmartVend помогает с установкой и настройкой MicroVend удалённо — инструкции и полное сопровождение, без выезда." }
+          },
+          {
+            "@type": "Question",
+            "name": "Я дилер. Есть ли специальные условия?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Да. Для дилеров и компаний, готовых продавать совместимые аппараты с предустановленной MicroVend «под ключ», предусмотрены специальные условия сотрудничества." }
+          },
+          {
+            "@type": "Question",
+            "name": "Почему лицензия оплачивается отдельно от абонентской платы?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Лицензия даёт бессрочное право использования MicroVend на одном аппарате. Абонентская плата покрывает облачную инфраструктуру SmartVend, обновления, мониторинг и техподдержку." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <!-- Fonts: Montserrat (display) + Inter (body). -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -164,6 +304,20 @@
       }
     }
   </style>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110150064', 'ym');
+
+    ym(110150064, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/110150064" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
 <body>
   <!-- Skip link for keyboard users -->
@@ -221,7 +375,7 @@
 
           <!-- CTAs -->
           <div class="mt-8">
-            <a href="#device" class="group inline-flex items-center justify-center gap-2 rounded-md bg-accent-500 px-6 py-3 font-semibold text-white shadow-soft transition hover:bg-accent-600 hover:shadow-[var(--shadow-pop)]">
+            <a href="#device" data-ym-goal="cta_hero" class="group inline-flex items-center justify-center gap-2 rounded-md bg-accent-500 px-6 py-3 font-semibold text-white shadow-soft transition hover:bg-accent-600 hover:shadow-[var(--shadow-pop)]">
               <span data-i18n="hero.ctaPrimary">Первый аппарат на MicroVend OS</span>
               <svg viewBox="0 0 24 24" class="size-5 transition-transform group-hover:translate-x-0.5" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M13.2673 4.20889C12.9674 3.9232 12.4926 3.93475 12.2069 4.23467C11.9212 4.5346 11.9328 5.00933 12.2327 5.29502L18.4841 11.2496H3.75C3.33579 11.2496 3 11.5854 3 11.9996C3 12.4138 3.33579 12.7496 3.75 12.7496H18.4842L12.2327 18.7043C11.9328 18.99 11.9212 19.4648 12.2069 19.7647C12.4926 20.0646 12.9674 20.0762 13.2673 19.7905L20.6862 12.7238C20.8551 12.5629 20.9551 12.3576 20.9861 12.1443C20.9952 12.0975 21 12.0491 21 11.9996C21 11.9501 20.9952 11.9016 20.986 11.8547C20.955 11.6415 20.855 11.4364 20.6862 11.2756L13.2673 4.20889Z" fill="currentColor"/></svg>
             </a>
@@ -357,7 +511,7 @@
               <div class="pt-1">
                 <h3 class="text-h4" data-i18n="dev.s2t">Устанавливаете MicroVend OS</h3>
                 <p class="mt-1 text-small text-text-muted" data-i18n="dev.s2d">Оформляете лицензию MicroVend — активируем и настроим удалённо, без выезда.</p>
-                <a href="#pricing" class="mt-2 inline-flex items-center gap-1.5 text-small font-semibold text-primary-600 hover:text-primary-700 hover:underline">
+                <a href="#pricing" data-ym-goal="view_pricing" class="mt-2 inline-flex items-center gap-1.5 text-small font-semibold text-primary-600 hover:text-primary-700 hover:underline">
                   <span data-i18n="dev.s2link">Посмотреть цены</span>
                   <svg viewBox="0 0 24 24" class="size-4" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M13.2673 4.20889C12.9674 3.9232 12.4926 3.93475 12.2069 4.23467C11.9212 4.5346 11.9328 5.00933 12.2327 5.29502L18.4841 11.2496H3.75C3.33579 11.2496 3 11.5854 3 11.9996C3 12.4138 3.33579 12.7496 3.75 12.7496H18.4842L12.2327 18.7043C11.9328 18.99 11.9212 19.4648 12.2069 19.7647C12.4926 20.0646 12.9674 20.0762 13.2673 19.7905L20.6862 12.7238C20.8551 12.5629 20.9551 12.3576 20.9861 12.1443C20.9952 12.0975 21 12.0491 21 11.9996C21 11.9501 20.9952 11.9016 20.986 11.8547C20.955 11.6415 20.855 11.4364 20.6862 11.2756L13.2673 4.20889Z" fill="currentColor"/></svg>
                 </a>
@@ -386,7 +540,7 @@
               <h3 class="text-h4" data-i18n="dev.ct">Знаете хороший доступный аппарат?</h3>
               <p class="mt-1 text-small text-text-muted" data-i18n="dev.cd">Мы работаем над тем, чтобы как можно больше хороших аппаратов поддерживали MicroVend OS. По вашим наводкам выходим на производителей и договариваемся о совместимости с нашей системой.</p>
             </div>
-            <a href="#contact" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-accent-500 px-5 py-3 font-semibold text-white shadow-soft transition hover:bg-accent-600 hover:shadow-[var(--shadow-pop)]" data-i18n="dev.cb">Рассказать об аппарате</a>
+            <a href="#contact" data-ym-goal="suggest_device" class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-accent-500 px-5 py-3 font-semibold text-white shadow-soft transition hover:bg-accent-600 hover:shadow-[var(--shadow-pop)]" data-i18n="dev.cb">Рассказать об аппарате</a>
           </div>
         </div>
       </div>
@@ -413,7 +567,7 @@
               <li class="flex gap-2.5 text-small text-text"><svg viewBox="0 0 24 24" class="size-5 shrink-0 text-primary-600" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM15.2197 8.96967L10.75 13.4393L8.78033 11.4697C8.48744 11.1768 8.01256 11.1768 7.71967 11.4697C7.42678 11.7626 7.42678 12.2374 7.71967 12.5303L10.2197 15.0303C10.5126 15.3232 10.9874 15.3232 11.2803 15.0303L16.2803 10.0303C16.5732 9.73744 16.5732 9.26256 16.2803 8.96967C15.9874 8.67678 15.5126 8.67678 15.2197 8.96967Z" fill="currentColor"/></svg><span data-i18n="price.l_2">Локализация: русский и казахский</span></li>
               <li class="flex gap-2.5 text-small text-text"><svg viewBox="0 0 24 24" class="size-5 shrink-0 text-primary-600" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM15.2197 8.96967L10.75 13.4393L8.78033 11.4697C8.48744 11.1768 8.01256 11.1768 7.71967 11.4697C7.42678 11.7626 7.42678 12.2374 7.71967 12.5303L10.2197 15.0303C10.5126 15.3232 10.9874 15.3232 11.2803 15.0303L16.2803 10.0303C16.5732 9.73744 16.5732 9.26256 16.2803 8.96967C15.9874 8.67678 15.5126 8.67678 15.2197 8.96967Z" fill="currentColor"/></svg><span data-i18n="price.l_3">Единый QR — Kaspi и Halyk</span></li>
             </ul>
-            <a href="#contact" class="mt-5 inline-flex items-center gap-1 text-small font-semibold text-primary-600 hover:text-primary-700 hover:underline" data-i18n="price.dealer">Дилерам — специальные условия</a>
+            <a href="#contact" data-ym-goal="dealer" class="mt-5 inline-flex items-center gap-1 text-small font-semibold text-primary-600 hover:text-primary-700 hover:underline" data-i18n="price.dealer">Дилерам — специальные условия</a>
           </div>
 
           <!-- Subscription (monthly) -->
@@ -924,6 +1078,62 @@
       buttons.forEach(function (b) {
         b.addEventListener('click', function () { setLang(b.dataset.lang); });
       });
+    })();
+  </script>
+
+  <!-- Conversion tracking → Yandex.Metrika goals -->
+  <script>
+    (function () {
+      var YM_ID = 110150064;
+      function goal(name) {
+        if (typeof window.ym === 'function') { window.ym(YM_ID, 'reachGoal', name); }
+      }
+
+      // Click delegation: explicit data-ym-goal wins, otherwise infer from href.
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a');
+        if (!a) return;
+
+        var explicit = a.getAttribute('data-ym-goal');
+        if (explicit) { goal(explicit); return; }
+
+        var href = a.getAttribute('href') || '';
+        if (href.indexOf('tel:') === 0) { goal('call'); return; }
+        if (href.indexOf('mailto:') === 0) { goal('email'); return; }
+        // Supplier links (buy hardware): Alibaba / WeChat / supplier WhatsApp QR.
+        if (href.indexOf('alibaba.com') > -1 || href.indexOf('u.wechat.com') > -1 || /wa\.me\/qr\//.test(href)) { goal('supplier_link'); return; }
+        // Our WhatsApp for sales contact.
+        if (href.indexOf('wa.me/77007122340') > -1) { goal('whatsapp'); return; }
+        if (href.indexOf('instagram.com') > -1 || href.indexOf('youtube.com') > -1) { goal('social'); return; }
+      });
+
+      // Language switch to Kazakh — only on a real click, not on initial load.
+      document.querySelectorAll('.lang-btn').forEach(function (b) {
+        b.addEventListener('click', function () {
+          if (b.dataset.lang === 'kk') goal('lang_kk');
+        });
+      });
+
+      // FAQ engagement — fire once per question the first time it's opened.
+      document.querySelectorAll('#faq details').forEach(function (d) {
+        d.addEventListener('toggle', function () {
+          if (d.open && !d.dataset.ymTracked) {
+            d.dataset.ymTracked = '1';
+            goal('faq_open');
+          }
+        });
+      });
+
+      // Scroll depth — user reaches the contact block (fires once).
+      var contact = document.getElementById('contact');
+      if (contact && 'IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) { goal('reach_contact'); io.disconnect(); }
+          });
+        }, { threshold: 0.3 });
+        io.observe(contact);
+      }
     })();
   </script>
 </body>
