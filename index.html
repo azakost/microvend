@@ -103,6 +103,11 @@
           },
           {
             "@type": "Question",
+            "name": "Нужно ли заказывать аппарат без операционной системы?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Нет. Ничего специально уточнять у поставщика не нужно — достаточно просто заказать аппарат. Он поставляется со своей заводской ОС, а мы перенастроим его на MicroVend." }
+          },
+          {
+            "@type": "Question",
             "name": "Можно ли установить MicroVend на любой аппарат?",
             "acceptedAnswer": { "@type": "Answer", "text": "Нет. MicroVend работает только с моделями, для которых проведены работы по совместимости и тестированию. Перед покупкой оборудования уточните совместимость у команды SmartVend." }
           },
@@ -155,7 +160,7 @@
   <!-- Fonts: Montserrat (display) + Inter (body). -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CSS v4 — browser build, no toolchain. Compiles in the page.
        For a production build, lift the block below into a .css file and run
@@ -232,6 +237,7 @@
       /* --- Typography --- */
       --font-display: "Montserrat", ui-sans-serif, system-ui, sans-serif;
       --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-handwritten: "Caveat", ui-sans-serif, cursive;
 
       --text-display: clamp(2.5rem, 1.4rem + 4.4vw, 4.5rem);
       --text-display--line-height: 1.05;
@@ -496,7 +502,16 @@
               <div class="pt-1">
                 <h3 class="text-h4" data-i18n="dev.s1t">Заказываете аппарат</h3>
                 <p class="mt-1 text-small text-text-muted"><span data-i18n-html="dev.s1d"><strong class="font-semibold text-text">Сами аппараты мы не продаём</strong>, но нашли надёжного поставщика с доступными ценами.</span><a href="#disclaimer" class="ml-0.5 align-super text-base font-bold leading-none text-primary-600 hover:text-primary-700" aria-label="Сноска" data-i18n-aria="dev.s1note_aria">*</a></p>
-                <div class="mt-2 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-small font-semibold text-primary-600">
+                <div class="mt-3">
+                  <span class="inline-block font-handwritten text-2xl font-bold leading-none -rotate-3 text-accent-600" data-i18n="dev.s1contacts">контакты тут</span>
+                  <div class="mt-1 flex items-end gap-2.5 pl-5 text-accent-500">
+                    <svg viewBox="0 0 24 44" class="h-9 w-4 -rotate-12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 4C14 15 10 27 12 37"/><path d="M6 30L12 38L18 30"/></svg>
+                    <svg viewBox="0 0 24 44" class="h-10 w-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 4C10 15 14 27 12 37"/><path d="M6 30L12 38L18 30"/></svg>
+                    <svg viewBox="0 0 24 44" class="h-9 w-4 rotate-12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12 4C14 15 10 27 12 37"/><path d="M6 30L12 38L18 30"/></svg>
+                  </div>
+                </div>
+                <div class="relative mt-1 inline-flex flex-wrap items-center gap-x-2.5 gap-y-1 px-1 text-small font-semibold text-primary-600">
+                  <svg class="pointer-events-none absolute -inset-x-3 -inset-y-2 h-[calc(100%+1rem)] w-[calc(100%+1.5rem)] text-accent-500" viewBox="0 0 200 60" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" stroke-width="2" d="M46 7C17 10 5 25 11 38C19 57 97 59 153 53C195 48 198 27 185 16C171 4 95 3 36 11"/></svg>
                   <a href="https://www.alibaba.com/product-detail/Indoor-Use-10-Inch-Screen-36_1601799553443.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 hover:text-primary-700 hover:underline">
                     <span data-i18n="dev.s1link">Ссылка на аппарат</span>
                     <svg viewBox="0 0 24 24" class="size-3.5" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M6.24992 4.5C5.28344 4.5 4.49996 5.2835 4.49996 6.25V17.75C4.49996 18.7165 5.28344 19.5 6.24992 19.5H17.7496C18.7161 19.5 19.4996 18.7165 19.4996 17.75V13.75C19.4996 13.3358 19.8354 13 20.2496 13C20.6638 13 20.9995 13.3358 20.9995 13.75V17.75C20.9995 19.5449 19.5445 21 17.7496 21H6.24992C4.45504 21 3 19.5449 3 17.75V6.25C3 4.45507 4.45504 3 6.24992 3H10.2498C10.664 3 10.9998 3.33579 10.9998 3.75C10.9998 4.16421 10.664 4.5 10.2498 4.5H6.24992ZM12.9997 3.75C12.9997 3.33579 13.3355 3 13.7497 3H20.25C20.6642 3 21 3.33579 21 3.75V10.25C21 10.6642 20.6642 11 20.25 11C19.8358 11 19.5 10.6642 19.5 10.25V5.56074L14.28 10.7804C13.9871 11.0732 13.5123 11.0732 13.2194 10.7803C12.9265 10.4874 12.9265 10.0125 13.2194 9.71964L18.4395 4.5H13.7497C13.3355 4.5 12.9997 4.16421 12.9997 3.75Z" fill="currentColor"/></svg>
@@ -616,6 +631,13 @@
                 <a href="https://wa.me/qr/UTE26KZH25DTL1" target="_blank" rel="noopener noreferrer" class="hover:text-primary-700 hover:underline">WhatsApp</a>
               </div>
             </div>
+          </details>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
+              <span data-i18n="faq.q12">Нужно ли заказывать аппарат без операционной системы?</span>
+              <svg viewBox="0 0 24 24" class="size-5 shrink-0 text-text-subtle transition-transform duration-200 group-open:rotate-180" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M4.21967 8.46967C4.51256 8.17678 4.98744 8.17678 5.28033 8.46967L12 15.1893L18.7197 8.46967C19.0126 8.17678 19.4874 8.17678 19.7803 8.46967C20.0732 8.76256 20.0732 9.23744 19.7803 9.53033L12.5303 16.7803C12.2374 17.0732 11.7626 17.0732 11.4697 16.7803L4.21967 9.53033C3.92678 9.23744 3.92678 8.76256 4.21967 8.46967Z" fill="currentColor"/></svg>
+            </summary>
+            <p class="pb-5 text-body text-text-muted" data-i18n="faq.a12">Нет. Ничего специально уточнять у поставщика не нужно — достаточно просто заказать аппарат. Он поставляется со своей заводской ОС, а мы перенастроим его на MicroVend.</p>
           </details>
           <details class="group">
             <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-semibold text-text [&::-webkit-details-marker]:hidden">
@@ -895,6 +917,7 @@
           'dev.s1t': 'Заказываете аппарат',
           'dev.s1d': '<strong class="font-semibold text-text">Сами аппараты мы не продаём</strong>, но нашли надёжного поставщика с доступными ценами.',
           'dev.s1note_aria': 'К сноске',
+          'dev.s1contacts': 'контакты тут',
           'dev.s1link': 'Ссылка на аппарат',
           'dev.s2t': 'Устанавливаете MicroVend OS',
           'dev.s2d': 'Оформляете лицензию MicroVend — активируем и настроим удалённо, без выезда.',
@@ -933,6 +956,8 @@
           'faq.heading': 'Частые вопросы',
           'faq.q2': 'Нужно ли покупать аппарат у Вас?',
           'faq.a2': '<strong class="font-semibold text-text">Нет</strong>. Аппарат вы приобретаете самостоятельно у рекомендованного поставщика. Вот ссылки:',
+          'faq.q12': 'Нужно ли заказывать аппарат без операционной системы?',
+          'faq.a12': 'Нет. Ничего специально уточнять у поставщика не нужно — достаточно просто заказать аппарат. Он поставляется со своей заводской ОС, а мы перенастроим его на MicroVend.',
           'faq.q3': 'Можно ли установить MicroVend на любой аппарат?',
           'faq.a3': '<strong class="font-semibold text-text">Нет</strong>. MicroVend работает только с моделями, для которых проведены работы по совместимости и тестированию. Перед покупкой оборудования уточните совместимость у команды SmartVend.',
           'faq.q4': 'Нужны ли дополнительные устройства для приёма платежей?',
@@ -1004,6 +1029,7 @@
           'dev.s1t': 'Аппаратты тапсырыс бересіз',
           'dev.s1d': '<strong class="font-semibold text-text">Аппараттарды біз сатпаймыз</strong>, бірақ бағасы қолжетімді сенімді жеткізушіні таптық.',
           'dev.s1note_aria': 'Сілтемеге',
+          'dev.s1contacts': 'байланыс осында',
           'dev.s1link': 'Аппаратқа сілтеме',
           'dev.s2t': 'MicroVend OS орнатасыз',
           'dev.s2d': 'MicroVend лицензиясын ресімдейсіз — қашықтан, барусыз белсендіріп баптаймыз.',
@@ -1042,6 +1068,8 @@
           'faq.heading': 'Жиі қойылатын сұрақтар',
           'faq.q2': 'Аппаратты сізден сатып алу керек пе?',
           'faq.a2': '<strong class="font-semibold text-text">Жоқ</strong>. Аппаратты ұсынылған жеткізушіден өзіңіз сатып аласыз. Міне сілтемелер:',
+          'faq.q12': 'Аппаратты операциялық жүйесіз тапсырыс беру керек пе?',
+          'faq.a12': 'Жоқ. Жеткізушіден арнайы ештеңе сұраудың қажеті жоқ — аппаратты жай ғана тапсырыс берсеңіз болды. Ол өзінің зауыттық ОЖ-сімен келеді, ал біз оны MicroVend-ке қайта баптаймыз.',
           'faq.q3': 'MicroVend-ті кез келген аппаратқа орнатуға бола ма?',
           'faq.a3': '<strong class="font-semibold text-text">Жоқ</strong>. MicroVend тек үйлесімділік пен тестілеу жұмыстары жүргізілген модельдермен жұмыс істейді. Жабдықты сатып алмас бұрын үйлесімділікті SmartVend командасынан нақтылаңыз.',
           'faq.q4': 'Төлем қабылдау үшін қосымша құрылғылар қажет пе?',
