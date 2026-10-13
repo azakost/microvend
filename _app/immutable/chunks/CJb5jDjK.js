@@ -1,0 +1,1 @@
+var e={KZT:`₸`};function t(t,n=`KZT`){return`${new Intl.NumberFormat(`ru-RU`,{maximumFractionDigits:0}).format(t)} ${e[n]??n}`}export{t};

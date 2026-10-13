@@ -1,0 +1,17 @@
+# Приложение MicroVend (меню точек, админки, суперадминка /adm) — одна страница app.html,
+# адреса разбирает уже само приложение в браузере. Всё остальное — лендинг, его не трогаем.
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule ^(point|adm)(/.*)?$ /app.html [L]
+</IfModule>
+
+# Оболочку не кешируем — после выкладки сразу новая версия.
+# Файлы в _app/immutable/ с хешем в имени — кешируем навсегда.
+<IfModule mod_headers.c>
+	<Files "app.html">
+		Header set Cache-Control "no-cache"
+	</Files>
+	<If "%{REQUEST_URI} =~ m#^/_app/immutable/#">
+		Header set Cache-Control "public, max-age=31536000, immutable"
+	</If>
+</IfModule>
