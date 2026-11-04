@@ -1,0 +1,1 @@
+import{C as e,D as t,I as n,J as r,T as i,V as a,Y as o,u as s}from"./BQYeOsK-.js";import{d as c,f as l}from"./vp6cmrlT.js";var u=t(`<span> </span>`);function d(t,d){o(d,!0);var f=u(),p=a(f,!0);n(()=>{s(f,1,`inline-flex rounded-full px-2.5 py-1 text-xs font-semibold whitespace-nowrap ${c[d.status]??``}`),e(p,l[d.status])}),i(t,f),r()}export{d as t};
