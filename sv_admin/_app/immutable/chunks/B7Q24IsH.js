@@ -1,0 +1,1 @@
+import{K as e,N as t,q as n}from"./9XoqlkXn.js";import{t as r}from"./B0EZIKxX.js";var i=new class{#e=n(null);get current(){return t(this.#e)}set current(t){e(this.#e,t,!0)}get isAdmin(){return this.current?.role===`admin`}async load(){this.current=await r.me()}setKaspi(e){this.current&&(this.current.kaspi=e)}clear(){this.current=null}};export{i as t};
