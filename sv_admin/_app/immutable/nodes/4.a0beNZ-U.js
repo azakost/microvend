@@ -1,0 +1,1 @@
+import{B as e,E as t,O as n,Q as r,Z as i}from"../chunks/DTiS3qFa.js";import{t as a}from"../chunks/BdkLKLjY.js";var o=n(`<div class="flex flex-col items-center gap-3 py-24 text-center text-stone-500"><!> <p>Выберите продажу в списке</p></div>`);function s(n){var s=o(),c=e(s);a(c,{name:`receipt`,class:`size-12 text-stone-300`}),i(2),r(s),t(n,s)}export{s as component};
