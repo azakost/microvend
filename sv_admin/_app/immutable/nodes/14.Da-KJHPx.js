@@ -1,0 +1,1 @@
+import{J as e,N as t,X as n,Z as r}from"../chunks/9XoqlkXn.js";import{a as i}from"../chunks/CRb8XM5z.js";import"../chunks/7Wp3DI5t.js";import{t as a}from"../chunks/BEYdJ189.js";function o(o,s){r(s,!0);{let n=e(()=>i(`/tasks`));a(o,{get backHref(){return t(n)},backFrom:`/tasks`,backLabel:`Задачи`,backClass:`lg:hidden`})}n()}export{o as component};
