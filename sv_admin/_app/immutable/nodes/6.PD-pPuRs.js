@@ -1,0 +1,1 @@
+import{D as e,G as t,it as n,k as r,rt as i}from"../chunks/3rpYAGqh.js";import{t as a}from"../chunks/DscsBYWi.js";var o=r(`<div class="flex flex-col items-center gap-3 py-24 text-center text-stone-500"><!> <p>Выберите партнёра в списке</p></div>`);function s(r){var s=o(),c=t(s);a(c,{name:`people`,class:`size-12 text-stone-300`}),i(2),n(s),e(r,s)}export{s as component};
