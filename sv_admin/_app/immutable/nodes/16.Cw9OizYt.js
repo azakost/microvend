@@ -1,0 +1,1 @@
+import{J as e,dt as t,j as n,k as r,ut as i}from"../chunks/BVI2uOaM.js";import{t as a}from"../chunks/D5KYydno.js";var o=n(`<div class="flex flex-col items-center gap-3 py-24 text-center text-stone-500"><!> <p>Выберите отчёт в списке</p></div>`);function s(n){var s=o(),c=e(s);a(c,{name:`dataBar`,class:`size-12 text-stone-300`}),i(2),t(s),r(n,s)}export{s as component};
