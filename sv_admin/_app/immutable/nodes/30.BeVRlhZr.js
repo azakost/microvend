@@ -1,1 +1,0 @@
-import{J as e,dt as t,ft as n,j as r,k as i}from"../chunks/D-pdZ6O0.js";import{t as a}from"../chunks/BClXqd8K.js";var o=r(`<div class="flex flex-col items-center gap-3 py-24 text-center text-stone-500"><!> <p>Выберите продажу в списке</p></div>`);function s(r){var s=o(),c=e(s);a(c,{name:`taskList`,class:`size-12 text-stone-300`}),t(2),n(s),i(r,s)}export{s as component};
